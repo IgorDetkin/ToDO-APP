@@ -1,0 +1,8 @@
+.list {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 40px;
+}

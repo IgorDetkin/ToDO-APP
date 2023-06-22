@@ -1,0 +1,23 @@
+.checkbox {
+    display: flex;
+    
+}
+
+.checkbox__wrapper {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.checkbox__wrapper_active {
+    background-position: center;
+    background-size: 20px;
+    background-image: url('../../../images/checkbox_active.svg');
+}
+
+.checkbox__field {
+    opacity: 0;
+}
