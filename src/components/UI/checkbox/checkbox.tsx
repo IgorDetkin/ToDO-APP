@@ -7,11 +7,8 @@ function Checkbox(props: any) {
   return (
     <div className={checkboxClassName}>
     <input 
-        className="checkbox__field"
-        {...props}
-        // type="checkbox" 
-        // checked={complete}
-        // onChange={() => toggleTodo(id)}
+      className="checkbox__field"
+      {...props}
     />
 </div>
   )

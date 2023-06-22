@@ -9,7 +9,6 @@ import { FilterValuesType } from '../../types/filterValues';
 
 const App: React.FC = () => {
 
-
     const [value, setValue] = useState('');
     const [todos, setTodos] = useState<ITodo[]>([]);
 
@@ -89,7 +88,6 @@ const App: React.FC = () => {
     }
 
 
-
     useEffect(() => {
         if(inputRef.current) inputRef.current.focus();
     }, [])
@@ -136,9 +134,18 @@ const App: React.FC = () => {
             <div className="control-panel">
                 <p className="control-panel__counter">{countCurrent} items select</p>
                 <div className="control-panel__nav">
-                    <button onClick={() => {changeFilter("all")}} className="control-panel__nav-button">All</button>
-                    <button onClick={() => {changeFilter("active")}} className="control-panel__nav-button">Active</button>
-                    <button onClick={() => {changeFilter("completed")}} className="control-panel__nav-button">Completed</button>
+                    <button 
+                        onClick={() => {changeFilter("all")}} 
+                        className="control-panel__nav-button"
+                    >All</button>
+                    <button 
+                        onClick={() => {changeFilter("active")}} 
+                        className="control-panel__nav-button"
+                    >Active</button>
+                    <button 
+                        onClick={() => {changeFilter("completed")}} 
+                        className="control-panel__nav-button"
+                    >Completed</button>
                 </div>
                 <button 
                     className="control-panel__nav-button control-panel__nav-button_long"
